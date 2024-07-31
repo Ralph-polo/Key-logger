@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Access Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="GCTU-Logo.png" alt="">
+        <h1 style="margin-bottom: 4px;">GCTU Key Access Monitor</h1>
+        <form id="access-form">
+            <label for="id-input">Enter ID:</label>
+            <input type="text" id="id-input" required>
+            <label for="keyID">Select Key</label>
+            <select name="keys" id="keyID">
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+                <option value="B4">B4</option>
+                <option value="C1">C1</option>
+                <option value="C2">C2</option>
+                <option value="C3">C3</option>
+                <option value="G6">G6</option>
+                <option value="conference-Room-1">Conference Room 1</option>
+                <option value="conference-Room-1">Conference Room 2</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+        <div id="staffmessage"></div>
+        <a href="keytakenrecords.html">Check Access Logs</a><br><br>
+        <a href="returnkey.html">Return A Key</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
